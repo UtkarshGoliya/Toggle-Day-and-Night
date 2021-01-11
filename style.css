@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    html,body{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    }
+    
+    .background{
+    height: 100%;
+    width: 100%;
+    background: url('day.png.png');
+    background-size: cover;
+    transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .container{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 1200px;
+
+    }
+    
+    .toggle{
+    height: 40px;
+    width: 80px;
+    background-color: gray;
+    border-radius: 40px;
+    }
+    
+    .toggle> .circle{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    }
+
+    
+    .bg2{
+        background: url('night.png.png');
+        background-size: cover;
+    }
+    
+    .toggle.active{
+        background-color: lightblue;
+    }
+    
+    .toggle.active> .circle{
+        margin-left: 50px;
+    }
